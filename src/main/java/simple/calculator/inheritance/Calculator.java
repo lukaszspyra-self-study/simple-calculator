@@ -9,7 +9,6 @@ import java.util.Scanner;
  */
 public class Calculator {
 
-	private int calType;
 	private MathCalculations mathCalculations;
 	private static Scanner input = new Scanner(System.in);
 
@@ -23,7 +22,7 @@ public class Calculator {
 		System.out.println("Type number [2] to SUBTRACT");
 		System.out.println("Type number [3] to MULTIPLY");
 		System.out.println("Type number [4] to DIVIDE");
-		calType = loadNumberFromUser(input);
+		int calType = loadNumberFromUser(input);
 		switch (calType) {
 		case 1:
 			mathCalculations = new Add();
